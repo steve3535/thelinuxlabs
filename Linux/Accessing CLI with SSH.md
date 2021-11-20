@@ -23,6 +23,15 @@ Other protocols exist such as telnet,rsh, rlogin but they are not secure and dep
   * Specify the private key while connecting:  
   ```ssh -i key.pem  <remoteserver>```
 
+  * When working with several accounts and several servers, it may be very useful to control your SSH Key-based through a configuration file: **~/.ssh/config**
+
+    ```bash
+    Host servera.thelinuxlabs.com
+         Hostname 192.168.122.1
+         User operator
+         IdentityFile /home/student/mykeys/private.key
+    ```
+
 ## Guided Exercise 01: SSH Key-based auth
 
 * connect to your workstation as student
@@ -32,5 +41,27 @@ Other protocols exist such as telnet,rsh, rlogin but they are not secure and dep
 * generate a second key pair to be used as auth on serverc with user root
 
 * from your workstation and with ssh, display the date and time on the remote serverc  
+
+## Assignement  
+
+GitHub, one of the most collaborative platforms allows ssh key based operations on defined repositories.  
+However a public SSH key cannot be shared among repositories.  
+This means each repository has its own unique key to be used with.  
+
+* Signup to github.com (if you are not already registered)
+
+* Activate the 2FA setting on your account
+
+* Create two distinct new repos
+
+* On your workstation, setup two directories to serve as local branches for your git repos
+
+* Enable SSH Key-based for the two repos and ensure push/pull is working for each of them without prompting for a password  
+
+### Annex
+
+1. Getting started with Github [github tuto](https://docs.github.com/en/get-started/quickstart/hello-world)
+
+2. Use git CLI
 
 

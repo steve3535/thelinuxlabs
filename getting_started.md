@@ -27,4 +27,10 @@ Tried run **ovftool** command on the CLI --> lead to an error saying *missing de
 Solution:
 `dnf -y install libnsl`   
 
+### CREDS and ACCESS
+>**CML**
+> admin/sysadmin  
+> sysadmin/sysadmin
+
+
 

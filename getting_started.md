@@ -32,7 +32,7 @@ Solution:
 > admin/sysadmin  
 > sysadmin/sysadmin
 
->**ESX**
+>**ESX**  
 > root/MyNameIsKw@kou1981#  
 > root/;yNq;eIsKz2kou19813  
 

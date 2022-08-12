@@ -22,3 +22,9 @@ So instead of later fihuring out how to link CML to KVM hosts, better have them 
 
 ### cannot open the OVA file of CML to begin the install 
 Was failing without any error message on the screen  
+checking on the log file locate in **/tmp/vmware-root**: **vmware-ui.log**, i found that it was complaining about the *OVFtool*  
+Tried run **ovftool** command on the CLI --> lead to an error saying *missing dependecy **libnsl***  
+Solution:
+`dnf -y install libnsl`   
+
+

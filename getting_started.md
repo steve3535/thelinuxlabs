@@ -47,5 +47,14 @@ I have to insert iptables rules for the CML and ESX services:
 I can then access them from my personal PopOs laptop with **https://192.168.178.40:8088** and **https://192.168.178.40:8080** respectively  
 192.168.178.40 being my DL385 ip address  
 
+## INCREASE CAPACITY WITH HP ACU  
+My challenge is I dont have a VGA screen i can attach to the server in other to go into HP ACU and econfigure the array.  
+recall I have 8 disks SSD of 400gb each and i only configured 1 array of 4  
+I needed to find a way of creating logical drive on the smart ctl from within the OS  
+* `wget http://downloads.linux.hpe.com/SDR/add_repo.sh`  
+* `./add_repo.sh -d CentOS -r 8 mcp`  
+* `dnf -y install ssacli` 
+* 
+
 
 

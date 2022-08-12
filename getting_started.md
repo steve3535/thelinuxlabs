@@ -14,3 +14,11 @@ Some key points:
   ```
  * I needed Vmware because of CML and in order to run some real world scenarios like Ansible+vcenter/vmware   
  
+## INSTALL and setup CML
+
+I decided to go for deployment of CML in ESX  
+main reason was that I wanted to play with things like trunking and use the CML routers to segregate group of servers.  
+So instead of later fihuring out how to link CML to KVM hosts, better have them within the same hypervisor.  
+
+### cannot open the OVA file of CML to begin the install 
+Was failing without any error message on the screen  

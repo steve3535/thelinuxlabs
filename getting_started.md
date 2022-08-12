@@ -54,7 +54,16 @@ I needed to find a way of creating logical drive on the smart ctl from within th
 * `wget http://downloads.linux.hpe.com/SDR/add_repo.sh`  
 * `./add_repo.sh -d CentOS -r 8 mcp`  
 * `dnf -y install ssacli` 
-* 
+* `ssacli` 
+> help  
+> controller all show  
+> ctrl slot=0 show  
+> ctrl slot=0 physicaldrive all show  
+> ctrl slot=0 logicaldrive all show 
+> ctrl slot=0 create type=ld drives=2I:2:5-2I:2:8 raid=0  
+
+After that: **lsblk -a** should show a new disk drive ready to be used !  
+
 
 
 

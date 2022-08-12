@@ -27,10 +27,25 @@ Tried run **ovftool** command on the CLI --> lead to an error saying *missing de
 Solution:
 `dnf -y install libnsl`   
 
-### CREDS and ACCESS
->**CML**
+### Creds and Access
+>**CML**  
 > admin/sysadmin  
 > sysadmin/sysadmin
+
+>**ESX**
+> root/MyNameIsKw@kou1981#  
+> root/;yNq;eIsKz2kou19813  
+
+With ESX, the network mode chosen is NAT (note that bridge mode worked perfectly in Vm Workstation making a router with ext. connection to be directly reachable in the 192.168.178.x physical subnet)  
+I have to insert iptables rules for the CML and ESX services:  
+```bash
+   iptables -t nat -A PREROUTING --dport 8088 -j DNAT --to-destination 172.16.68.128:443  
+   iptables -t nat -A PREROUTING --dport 8080 -j DNAT --to-destination 172.16.68.129:443
+   iptables -t nat -A POSTROUTING -j MASQUERADE 
+```
+172.16.68.128 being ESXi web portal and 172.16.68.129 being CML portal 
+I can then access them from my personal PopOs laptop with **https://192.168.178.40:8088** and **https://192.168.178.40:8080** respectively  
+192.168.178.40 being my DL385 ip address  
 
 
 

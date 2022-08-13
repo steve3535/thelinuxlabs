@@ -1,0 +1,22 @@
+### LXD containers not getting IPV4 address dynamically
+
+I don't know if this is something conflict between vmware and libvirt running concurrently on my server  
+```bash
+lxc image copy images:xxxxxx local: --alias ubuntu
+lxc launch ubuntu
+lxc ls
+```
+I dont see any ip address  
+even after loging in with *lxc shell ctr_name* and *dhclient eth0*, still nothing  
+cheks on the LXD network seem normal:  
+```bash
+lxc network ls 
+lxc network show lxdbr0
+brctl show
+ip a
+``` 
+changed the distro to centos , but still  
+Further checks in the containers:  
+**dhclient -v eth0** --> **DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval** and **No DHCPOFFERS received** error messages  
+the above can  also been seen in the container with **journalctl -xe** in fedora based distros  
+

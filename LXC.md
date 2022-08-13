@@ -51,6 +51,13 @@ In summary:
   firewall-cmd --zone=trusted --change-interface=lxdbr0 --permanent
   firewall-cmd --reload
   ``` 
-  
+### LXD/LXC CHEAT SHEET
+**limit cpu and memory**  
+`lxc config set ctrname limits.cpu 1`  
+`lxc config set ctrname limits.memory 128MB` 
+
+**copy images from public repo to local**  
+`lxc image copy images:xxxxxxx local: --alias ubuntu20` 
+
 
 

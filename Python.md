@@ -48,4 +48,17 @@ Comment copier juste par valeur ??
   [[1, 2], [3, 4]]
   >>> 
   ```
+Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2612802/how-do-i-clone-a-list-so-that-it-doesnt-change-unexpectedly-after-assignment  
+
+
   
+### CHEAT SHEET  
+1. le type et l'adresse d'une variable:  
+   > type(int)  
+   > id(int)  
+2. les commentaires multiline:  
+   > '''
+   > Hello, this is a multi line comment  
+   > Hasta Luego !  
+   > '''  
+   

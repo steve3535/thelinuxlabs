@@ -57,7 +57,7 @@ Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2
    > type(int)  
    > id(int)  
 2. les commentaires multiline:  
-   > '''
+   > '''  
    >  Hello, this is a multi line comment  
    >  Hasta Luego !  
    > '''  

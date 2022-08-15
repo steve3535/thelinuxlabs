@@ -28,9 +28,9 @@ Comment copier juste par valeur ??
 * deuxième tentative: ***b=a[:]***
   meme phenomene que la premiere tentative  
   
-* troisième tentative: *b=list(a)*
+* troisième tentative: ***b=list(a)***
   meme phenome que la premiere tentative  
-* ULTIME TENTATIVE: 
+* ULTIME TENTATIVE:   
   ***import copy***  
   ***b=copy.deepcopy(a)***  
   dans ce cas, on a le résultat escompté même avec les nested lists, mais ca a un coût: deepcopy est une fonction récursive ...  
@@ -58,7 +58,7 @@ Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2
    > id(int)  
 2. les commentaires multiline:  
    > '''
-   > Hello, this is a multi line comment  
-   > Hasta Luego !  
+   >  Hello, this is a multi line comment  
+   >  Hasta Luego !  
    > '''  
    

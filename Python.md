@@ -61,4 +61,8 @@ Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2
    >  Hello, this is a multi line comment  
    >  Hasta Luego !  
    > '''  
-   
+3. bool('') --> False
+   bool(' ') --> True
+   int("4.7") --> value error 
+4. Convertir en code ASCII et vice versa  
+   Fonctions **ord()** et **chr()**

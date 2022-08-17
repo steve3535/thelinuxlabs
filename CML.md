@@ -18,6 +18,7 @@
 
 and set the ip of the interface connected to that managed switch to auto:  
 > int gi0/1  
+> no shut  
 > ip addr dhcp  
 
 

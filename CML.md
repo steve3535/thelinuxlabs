@@ -14,4 +14,5 @@
 
 2. Add an unmanaged switch and an external connection of type bridge 
 
+![basic topo with ext conn](./basic_topo_with_ext.png)
 

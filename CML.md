@@ -14,5 +14,11 @@
 
 2. Add an unmanaged switch and an external connection of type bridge 
 
-![basic topo with ext conn](./basic_topo_with_ext.png)
+![basic topo with ext conn](./basic_topo_with_ext.png)  
+
+and set the ip of the interface connected to that managed switch to auto:  
+> int gi0/1  
+> ip addr dhcp  
+
+
 

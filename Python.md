@@ -77,6 +77,13 @@ Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2
      *exists = lst.count(x) > 0*    
    * if x and y are lists, then x + y is a new brand list  
      x.extend(y) --> it will create a new version of x containing the elements of both lists  
+ 6. Strings  
+    * s.count(x)  
+    * s.find(x) equivalent to index() method for lists  
+    * s.isdigit()  
+    * s.split()  
+    * s.replace('*','#')  
+    * there is multiline strings, just like multiline comments !
      
     
      

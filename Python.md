@@ -65,4 +65,18 @@ Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2
    bool(' ') --> True
    int("4.7") --> value error 
 4. Convertir en code ASCII et vice versa  
-   Fonctions **ord()** et **chr()**
+   Fonctions **ord()** et **chr()**  
+5. lists  
+   * remember a list in python can collect different types of data  
+   * a string is immutable: impossible to do i place assignement  
+   * *lst.pop()* --> will remove the last element of the list and will change the list lst  
+   * *lst.remove(x)* --> remove first occurence of x  
+   * *lst.index(x)* --> returns index of fisrst occurence of x  
+   * check existence of element in a list:  
+     *exists = x in lst*  
+     *exists = lst.count(x) > 0*    
+   * if x and y are lists, then x + y is a new brand list  
+     x.extend(y) --> it will create a new version of x containing the elements of both lists  
+     
+    
+     

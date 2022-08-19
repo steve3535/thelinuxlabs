@@ -84,6 +84,20 @@ Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2
     * s.split()  
     * s.replace('*','#')  
     * there is multiline strings, just like multiline comments !
+ 7. Tuples  
+    * **They are immutables !!!**  
+    * *x = 1,2,3,4* or *x = (1,)*  
+ 8. loops
+    * *for i, element in enumerate(x):*  
+      x being any data collection structure: list, string, tuple, ...  
+      then we have access both to the element and the indice  
+    * *for ... else*  
+       to avoid those boolean variables within the snippet   
+       you need a break inside the for  
+    * *while ... else*  
+    
+      
+     
      
     
      

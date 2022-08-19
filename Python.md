@@ -95,6 +95,11 @@ Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2
        to avoid those boolean variables within the snippet   
        you need a break inside the for  
     * *while ... else*  
+  9. slices
+    * it is an operator that works on any data collection  
+    * syntax is **[start:stop:step]**  
+    * to reverse a string, a tuple or a list: **[::-1]**  
+    
     
       
      

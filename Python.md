@@ -105,6 +105,24 @@ Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2
       * U want to avoid using an additional boolean value to check a condition if its not met till the end of the loop? use for..else or while ..else  
       * U want to compare strings or digits representing strings, try to sort them first  
       * U want to do some kind of swap to switch variables or values, remember to use a temporary variable  
+      * U can define function (helper) inside  function  
+      * frequencies counting ? think of a dict  
+      
+  11. Dictionnaries  
+      * delete an item: **del x[1]**  
+      * get values of x: **x.values()** #but to use it as an actual list, u have to list(x.values())  
+      * get keys of x: **x.keys()** #but to use it as an actual list, u have to list(x.keys())  
+      * get items as a list of tuples:  **x.items()** #but to use it as an actual list, u have to list(x.items()) 
+      * we cannot use x[0] with 0 as indice because a dict is an unordered data collection structure, we cannot use a range for the indices - x[0] will work only and only if 0 is a key of x    
+      * *for k,v in x.items():*  
+      * **.get()**  
+        > string = 'abalo and afi love each other and are planning to live together'  
+        > counts = {}  
+        > for i in string.spli():  
+        >   counts[i] = counts.get(i,0) + 1  
+        > return counts  
+       
+        
     
     
       

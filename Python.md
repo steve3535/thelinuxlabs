@@ -99,6 +99,12 @@ Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2
     * it is an operator that works on any data collection  
     * syntax is **[start:stop:step]**  
     * to reverse a string, a tuple or a list: **[::-1]**  
+
+  10. tips  
+      * U wanna loop but u dont know the number of loops? use while instead of for  
+      * U want to avoid using an additional boolean value to check a condition if its not met till the end of the loop? use for..else or while ..else  
+      * U want to compare strings or digits representing strings, try to sort them first  
+      * U want to do some kind of swap to switch variables or values, remember to use a temporary variable  
     
     
       

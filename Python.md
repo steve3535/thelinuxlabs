@@ -121,6 +121,9 @@ Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2
         > for i in string.spli():  
         >   counts[i] = counts.get(i,0) + 1  
         > return counts  
+      * Idée de DEMO: prouver que utiliser un dic pour checker lexistence d'un élément est plus performant que de lfaire avec une liste  
+        > python3 -mtimeit "z in ['a','b','c','d','e','f']*10+['z']"  
+        > *prendre des grandeurs de 10 en 10 pour passer de nanos a usec puis a ms*   
        
         
     

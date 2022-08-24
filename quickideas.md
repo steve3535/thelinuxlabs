@@ -5,6 +5,9 @@
 5. doctena for africa
 6. distributed cloud for labs (the vaas project)
 7. appointment app for barbers
-8. mobile app to  monitor and alert on parking free slots within an area
+8. mobile app to  monitor and alert on parking free slots within an area (this doesnt need to be a geo app, it can be a p2p application)  
 9. social network to help shiping things between africa and the rest of the world by making each traveller an individual shipper
 10. food shop to sell BOTOKOIN, galettes, GAou, and other such foods, just like how we have viets selling Nems 
+11. consultancy for open source , build open source solutions for companies  
+12. app that helps with the procedure and follow-up on land acquisition end to end
+13. 

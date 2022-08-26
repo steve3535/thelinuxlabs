@@ -135,6 +135,11 @@ Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2
       >   return item[1]  
       > new_lst = sorted(lst,key=sort_func)  
 
+  
+  14. Misc
+      * list comprehensions  
+      * unpacking  
+      * doc string
  
 
 

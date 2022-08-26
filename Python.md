@@ -129,6 +129,16 @@ Pour de plus amples explications, voir --> https://stackoverflow.com/questions/2
       * **randrange(start,end,step)**  
       * **random.choice(lst)**  
        
+  13. sorting  
+      * **sorted(lst,reverse=True)**  
+      > def sort_func(item):  
+      >   return item[1]  
+      > new_lst = sorted(lst,key=sort_func)  
+
+ 
+
+
+
         
     
     

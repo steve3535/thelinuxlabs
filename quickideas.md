@@ -10,4 +10,5 @@
 10. food shop to sell BOTOKOIN, galettes, GAou, and other such foods, just like how we have viets selling Nems 
 11. consultancy for open source , build open source solutions for companies  
 12. app that helps with the procedure and follow-up on land acquisition end to end
-13. 
+13. USE BUBBLE AND RETOOL TO BUILD TONS OF APPS !!!! bubble for external and retool for internal  
+14. 

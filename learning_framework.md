@@ -19,7 +19,7 @@
 * Dont rush learning, take time, especially for fundamentals  
 * find strategies and ways to have a lot of time free for learning (one way to do that is to automate your tasks at work)  
 
-### 2. Defining new foundations, new fundamentals:  
+### 3. Defining new foundations, new fundamentals:  
 1. AWS (because it reinvents even businesses, ie money earning,its a rethink , its the new world)  
 1. Python (for code, code as number 1 as well because its a language just like english we need to speak)
 2. Bubble/Retool, my solution to my ignorance in frontend - needed to keep the project moving and to get fast to market ...

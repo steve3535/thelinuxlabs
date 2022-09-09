@@ -11,4 +11,5 @@
 11. consultancy for open source , build open source solutions for companies  
 12. app that helps with the procedure and follow-up on land acquisition end to end
 13. USE BUBBLE AND RETOOL TO BUILD TONS OF APPS !!!! bubble for external and retool for internal  
-14. 
+14. dans le cadre de mon projet de chaos learning, jepeux utiliser ladvisor de redhat insights pour creer des cas !!!
+15. adopter le minset lego - utiliser pour lautomatisation au max des briques existantes meme si elles sont payantes pour certaines, devenons des architectes

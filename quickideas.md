@@ -13,3 +13,13 @@
 13. USE BUBBLE AND RETOOL TO BUILD TONS OF APPS !!!! bubble for external and retool for internal  
 14. dans le cadre de mon projet de chaos learning, jepeux utiliser ladvisor de redhat insights pour creer des cas !!!
 15. adopter le minset lego - utiliser pour lautomatisation au max des briques existantes meme si elles sont payantes pour certaines, devenons des architectes
+16. network labs for african student -ca rejoint encore linux lab mais un petit calcul:
+    supposons deux instances CML = 400 USD = 250k xof pour 12 mois
+    ca te fait 40 noeuds cisco
+    jai deja le compute - 32 cores / 512 go de ram
+    >> license par noeud a adresser aux ecoles bts reseau et cic
+    >> 1 noeud = 10K xof par mois --> max = 120K xof par an 
+    >> si min 2 noeuds alors 240k xof par an, a imposer par an
+    >> donc si on vend tout, profit max = 40/2 = 20*240K - 250K = 4550K = 4 550 000 par an
+    >> et en plus si le trick marche (cest a dire jarrive a ne pas faire expirer)
+    >> a 

@@ -40,13 +40,24 @@ Solution:
 With ESX, the network mode chosen is NAT (note that bridge mode worked perfectly in Vm Workstation making a router with ext. connection to be directly reachable in the 192.168.178.x physical subnet)  
 I have to insert iptables rules for the CML and ESX services:  
 ```bash
-   iptables -t nat -A PREROUTING --dport 8088 -j DNAT --to-destination 172.16.68.128:443  
-   iptables -t nat -A PREROUTING --dport 8080 -j DNAT --to-destination 172.16.68.129:443
+   iptables -t nat -A PREROUTING -p tcp --dport 8088 -j DNAT --to-destination 172.16.68.128:443  
+   iptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination 172.16.68.129:443
    iptables -t nat -A POSTROUTING -j MASQUERADE 
 ```
 172.16.68.128 being ESXi web portal and 172.16.68.129 being CML portal 
 I can then access them from my personal PopOs laptop with **https://192.168.178.40:8088** and **https://192.168.178.40:8080** respectively  
 192.168.178.40 being my DL385 ip address  
+
+**ATTENTION: POUR FAIRE DU NAT FORWARDING VERS UN GUEST KVM**  
+Dans ce cas, cest différent: il faut insérer des règles de FORWARD aussi (ie en plus des regles PREROUTING, POSTROUTING etant facultatif dans ce cas):  
+```bash
+iptables -I FORWARD -i eno1 -o virbr0 -d 192.168.122.0/24 -j ACCEPT
+iptables -I FORWARD -i virbr0 -o eno1 -s 192.168.122.0/24 -j ACCEPT
+```
+eno1 etant linterface du server (donc en queque sorte son wan adapter)  
+
+Quelquechose dintéressant a tester: dans le cas dun traffic web, au lieu de faire du iptables, utiliser un reverse proxy nginx  
+
 
 ## INCREASE CAPACITY WITH HP ACU  
 My challenge is I dont have a VGA screen i can attach to the server in other to go into HP ACU and econfigure the array.  

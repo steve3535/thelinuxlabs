@@ -56,7 +56,7 @@ iptables -I FORWARD -i virbr0 -o eno1 -s 192.168.122.0/24 -j ACCEPT
 ```
 eno1 etant linterface du server (donc en queque sorte son wan adapter)  
 
-Quelquechose dintéressant a tester: dans le cas dun traffic web, au lieu de faire du iptables, utiliser un reverse proxy nginx  
+**Quelquechose dintéressant a tester: dans le cas dun traffic web, au lieu de faire du iptables, utiliser un reverse proxy nginx**  
 
 
 ## INCREASE CAPACITY WITH HP ACU  

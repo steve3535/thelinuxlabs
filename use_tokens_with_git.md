@@ -22,7 +22,7 @@ solution was to leverage on personal token to be used on the cli with the github
 1. install the github client  
    `dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo`  
    `dnf install gh`  
-   (on ubuntu: ** apt installl gh**)  
+   (on ubuntu: **apt installl gh**)  
 2. `gh auth login`
 3. Note tht the above command will cache the credentials as well  
 4. 

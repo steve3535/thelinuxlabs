@@ -14,13 +14,17 @@ first trap here is the security policy in the office: cannot go on the internet 
 I have to use my JUmp server and set the proxy in my terminal and decide to run all git commands in the terminal (still within vscode)  
 Previous to that, I made sure I have the explorer opened thru remote ssh to my Jump  
 
-second issue: how to push ? (because for some obscure reason i didnt want to use ssh keys) but rather https tokens  
+second issue: how to push ? (because for some obscure reason i didnt want to use ssh keys) but rather https tokens   
+(and its actually the only choice because the proxy works for http/https not TCP(ssh) !!!   
 
 solution was to leverage on personal token to be used on the cli with the github client  
 
 1. install the github client  
    `dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo`  
    `dnf install gh`  
+   (on ubuntu: ** apt installl gh**)  
 2. `gh auth login`
+3. Note tht the above command will cache the credentials as well  
+4. 
 
 

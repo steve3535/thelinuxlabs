@@ -75,7 +75,27 @@ iptables -t nat -A PREROUTING -p tcp --dport 8086 -j DNAT --to-destination 192.1
 iptables -I FORWARD -i eno1 -o virbr0 -d 192.168.122.0/24 -j ACCEPT
 iptables -I FORWARD -i virbr0 -o eno1 -s 192.168.122.0/24 -j ACCEPT
 ```   
- 
+Autrement, C'est possible d'utiliser un reverse proxy nginx mais il faut peuafiner ...
+
+```bash
+server {
+        listen       80 default_server;
+        listen       [::]:80 default_server;
+        #root         /usr/share/nginx/html;
+
+        # Load configuration files for the default server block.
+        include /etc/nginx/default.d/*.conf;
+
+        location / {
+	     proxy_pass https://192.168.122.251:8006;
+	     proxy_ssl_verify off;
+	     proxy_set_header X-Real-IP $remote_addr;
+	     proxy_set_header X-Forwaded-Host $host;
+	     proxy_set_header X-Forwaded-Port $server_port;
+        }
+```
+
+
 
 
 

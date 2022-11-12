@@ -50,7 +50,7 @@ It turned out that cpu topology HOST-PASSTHROUGH worked.
 
 ![VM with EFI](./proxmox_vm_overview.png)  
 
-![CPU topology](./proxmox_cpu_host.png)  
+![CPU topology](./proxmox_cpuhost.png)  
 
 
 

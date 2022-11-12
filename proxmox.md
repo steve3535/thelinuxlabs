@@ -76,7 +76,7 @@ iptables -I FORWARD -i eno1 -o virbr0 -d 192.168.122.0/24 -j ACCEPT
 iptables -I FORWARD -i virbr0 -o eno1 -s 192.168.122.0/24 -j ACCEPT
 ```   
 Autrement, C'est possible d'utiliser un reverse proxy nginx mais il faut peuafiner ...
-
+Attention ! il ma fallu faire un **setenforce 0** (A tester: setsebool -P httpd_can_network_connect 1)  
 ```bash
 server {
         listen       80 default_server;

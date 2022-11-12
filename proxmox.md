@@ -1,6 +1,13 @@
 ## Proxmox VE as Nested Hypervisor
 ### tested under RHEL8.6 and AMD processor
 
+0. The problem:  
+
+![No virtualization detected](./proxmox_no_virt.png)  
+
+And this is because I am not installing it on a bare metal, it is a VM inside KVM.  
+
+
 1. Activate nested virt on the real host:  
 
 ```bash
@@ -47,10 +54,18 @@ the best bet here is to do some granular simple tests and check the information 
 Create a dummy VM (with a minimal Linux OS) and play with the CPU topology.  
 Evrytime you pick a topo, check the flags SVM OR VMX with cat /proc/cpuinfo.  
 It turned out that cpu topology HOST-PASSTHROUGH worked.  
+(even the topologies 'hypervisor default' and 'host-model' didnt work)
 
 ![VM with EFI](./proxmox_vm_overview.png)  
 
 ![CPU topology](./proxmox_cpuhost.png)  
+
+3. This error might surface:  
+
+![CDROM access denied](./proxmox_secure_boot.png)
+
+Go to the settings in UEFI and disable secure boot.  
+
 
 
 

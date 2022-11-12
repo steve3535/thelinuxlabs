@@ -68,6 +68,14 @@ Con for it, is live migration will probably be impossible unless it is being mig
 
 Go to the settings in UEFI and disable secure boot.  
 
+4. Access the web interface  
+
+```bash
+iptables -t nat -A PREROUTING -p tcp --dport 8086 -j DNAT --to-destination 192.168.122.251:8006
+iptables -I FORWARD -i eno1 -o virbr0 -d 192.168.122.0/24 -j ACCEPT
+iptables -I FORWARD -i virbr0 -o eno1 -s 192.168.122.0/24 -j ACCEPT
+```   
+ 
 
 
 

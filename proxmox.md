@@ -48,5 +48,9 @@ Create a dummy VM (with a minimal Linux OS) and play with the CPU topology.
 Evrytime you pick a topo, check the flags SVM OR VMX with cat /proc/cpuinfo.  
 It turned out that cpu topology HOST-PASSTHROUGH worked.  
 
+![VM with EFI](./proxmox_vm_overview.png)  
+
+![CPU topology](./proxmox_cpu_host.png)  
+
 
 

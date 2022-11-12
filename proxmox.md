@@ -54,7 +54,9 @@ the best bet here is to do some granular simple tests and check the information 
 Create a dummy VM (with a minimal Linux OS) and play with the CPU topology.  
 Evrytime you pick a topo, check the flags SVM OR VMX with cat /proc/cpuinfo.  
 It turned out that cpu topology HOST-PASSTHROUGH worked.  
-(even the topologies 'hypervisor default' and 'host-model' didnt work)
+(even the topologies 'hypervisor default' and 'host-model' didnt work)   
+Pro for the passthrough model is that it gives max perf  
+Con for it, is live migration will probably be impossible unless it is being migrated to an identical host  
 
 ![VM with EFI](./proxmox_vm_overview.png)  
 

@@ -23,3 +23,6 @@
     > donc si on vend tout, profit max = 40/2 = 20 x 240K - 250K = 4550K = 4 550 000 par an
     > et en plus si le trick marche (cest a dire jarrive a ne pas faire expirer)
     > a part les 250K dinvest, il faut developper une interface proprio graphique + (le plus dur) trouver une source electrique stable - une maison
+17. probleme DUR - pour chris - le pb ici est tres douloureux car il sagit d'une douleur psychologique - la pire des douleurs donc.  
+    motivation, redonner du peps, toutes les femmes quelle avait vu au CHL, plus la coiffeuse, Amelie, Elsa, etc ...
+    

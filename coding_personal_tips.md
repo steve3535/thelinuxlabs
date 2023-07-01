@@ -1,5 +1,5 @@
 ### understanding the problem: it helps to write or draw it down, u can better visualize it  
-    You can start but if in the next 5 minutes u dt have a serious clue, try writing it down .. 
+You can start but if in the next 5 minutes u dt have a serious clue, try writing it down .. 
 
 ### How to compute the square of a number without math library ?  
 `x**0.5`  

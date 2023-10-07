@@ -12,5 +12,7 @@
     * `update-grub`
     * reboot
   * I ended up with a system panic :)
+  * Tried another format: GRUB_DEFAULT="1>4" but still  (rememeber counting from 0)
+  * 
     
       

@@ -30,7 +30,7 @@
      --cdrom ubuntu23.04.iso --console pty,target_type=serial --graphics none --boot kernel=/media/casper/vmlinuz,initrd=/media/casper/initrd,kernel-args="console=ttyS0"
      ```
   5. virsh destroy node3
-  6. virsh edit node3
+  6. virsh edit node3 and 
      remove <boot>,<kernel> and <initrd> lines
      
   

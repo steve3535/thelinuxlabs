@@ -1,3 +1,4 @@
+## Limitations of cloud images
 * when using virt-install, we usually do use the cloud kvm image of ubuntu: it is a minimal kernel image that doesnt contain all modules, for e.g. nfsd
   * i wanted to start an nfs-server on my instance and found that the `systemctl status nfs-server` exits with dependency error
   * with `systemctl cat nfs-server` --> quickly found that the issue was with *proc-fs-nfsd.mount* unit
@@ -13,6 +14,7 @@
     * reboot
   * I ended up with a system panic :)
   * Tried another format: GRUB_DEFAULT="1>4" but still  (rememeber counting from 0)
-  * 
+
+ 
     
       

@@ -33,6 +33,13 @@
   6. virsh edit node3 and 
      remove <boot>,<kernel> and <initrd> lines
      
+## Installing an ISO with virt-install 
+```
+virt-install --name node1 --vcpus 1 -r 2048 --disk path=/var/lib/libvirt/images/node1.qcow2,bus=virtio,size=20 --network default,model=virtio --location /var/lib/libvirt/images/Rocky-9.2-x86_64-minimal.iso --graphics none --extra-args 'console=ttyS0,115200n8 serial'
+```
+
+
+
   
   
   

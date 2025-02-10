@@ -40,18 +40,27 @@ virt-install --name node1 --vcpus 1 -r 2048 --disk path=/var/lib/libvirt/images/
 ## Installing from a cloud image
 ```
 # 1. Download the generic cloud image qcow2
+
 # 2. Customize it to make it your template
+
 sudo apt install libguest-tools
 sudo virt-customize -a ./Rocky-Generic-Cloud.qcow2 --root-password password:123456
-## 2.1 install a temporary VM to further customize (account creation,SElinux disabling, etc ...)  
+
+## 2.1 install a temporary VM to further customize (account creation,SElinux disabling, etc ...)
+
 # 3. Copy as many disks u need vms
+
 cp ./Rocky-Generic-Cloud.qcow2 node1.qcow2
 cp ./Rocky-Generic-Cloud.qcow2 node2.qcow2
 cp ./Rocky-Generic-Cloud.qcow2 node3.qcow2
+
 # 4. Resize the initial disk
+qemu-img resize ./node1.qcow2 20G
+
 # 5. Install each VM
 sudo virt-customize -a ./node1.qcow2 --hostname node1
 virt-install --vcpus 1 -r 2048 --os-variant rocky9 --disk path=./node1.qcow2,bus=virtio --import --network default,model=virtio
+
 #
 ```
 

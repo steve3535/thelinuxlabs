@@ -63,6 +63,14 @@ virt-install --vcpus 1 -r 2048 --os-variant rocky9 --disk path=./node1.qcow2,bus
 
 #
 ```
+## About storage
+```
+virsh pool-list
+virsh vol-list --pool default
+virsh vol-delete nodex.qcow2 --pool terraform_images
+```
+
+
 
 
 

@@ -70,6 +70,24 @@ virsh vol-list --pool default
 virsh vol-delete nodex.qcow2 --pool terraform_images
 ```
 
+## Terraform + KVM
+* rocky 9 téléchargé depuis le site officiel de rocky (image generic cloud) ne semble pas marcher -- ca reste bloqué sur "Welcome Grub"
+  * pourtant ca marche quand jinstalle en manuel avec virt-install
+* rocky 8 par contre marche
+* le pb navait rien a voir avec BIOS ou UEFI
+  * mais pour UEFI sassurer de telecharger le firmware OVMF, et ensuite eventuellement le referencer comme ceci dans la secion libvirt_domain:
+    ```
+     #firmware = "/usr/share/OVMF/OVMF_CODE_4M.fd"
+     #nvram {
+     #  template = "/usr/share/OVMF/OVMF_VARS_4M.fd"
+     #  file = "/var/lib/libvirt/qemu/nvram/tf-vm-${count.index}_VARS.fd"
+     #}
+     #machine = "q35"
+     #boot_device {
+     #    dev = ["hd"]
+     #}
+    ```
+  
 
 
 
